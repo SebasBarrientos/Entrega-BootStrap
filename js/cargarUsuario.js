@@ -33,7 +33,7 @@ function guardar_cliente(e) {
     console.log("pone un mail");
   } else if (password_usuario !== password_repeat_usuario) {
     console.log("Las contra no coinciden");
-  } else if (validarContrasena(password_usuario)) {
+  } else if (validarContrasena(password_usuario) != true) {
     console.log(
       "La contraseña debe tener al menos 8 caracteres de longitud. Debe contener al menos una letra minúscula, una letra mayúscula, un número y un ca rácter especial"
     );
