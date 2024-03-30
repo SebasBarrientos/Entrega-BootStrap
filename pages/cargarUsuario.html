@@ -33,26 +33,25 @@
       </ul>
     </div>
   </nav>
-
-
-  <div class="container-lg">
+  
+  <div class="container-ls">
     <div class="text-center">
       <h2 class="mt-5">Formulario <br>
         <small class="text-muted">Completa todos los campos para cargar un nuevo usuario</small>
       </h2>
     </div>
-
-    <div class="row justify-content-center my-5">
+    
+    <div class="row justify-content-center my-1">
       <div class="col-lg6">
         <form id="form">
-          <div class="mb-5 input-group">
+          <div class="mb-3 input-group">
             <label for="name" class="form-label">Nombre:</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
               </span>
               <input type="name" class="form-control" id="name">
             </div>
-
+            
             <label for="email" class="form-label">Email</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
@@ -60,8 +59,9 @@
               <input type="email" class="form-control" id="email">
             </div>
           </div>
-
-          <div class="mb-5 input-group">
+          <div id="alert"></div>
+          
+          <div class="mb-3 input-group">
             <label for="password" class="form-label">Contraseña</label>
             <div class="mb-4 input-group">
               <span class="input-group-text">
@@ -80,7 +80,7 @@
       </div>
     </div>
   </div>
-
+  
   <script src="../js/cargarUsuario.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
