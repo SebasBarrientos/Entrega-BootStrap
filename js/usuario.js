@@ -31,11 +31,11 @@ function uniendoImagenes(arrImg, arrKeys) {
       let user_localStorage = JSON.parse(localStorage.getItem(usuarioConImagen));
       let img_user_localStorage = JSON.parse(localStorage.getItem(arrImg[i]));
       lista.innerHTML +=
-      `<div class="card card text-white bg-dark mb-3 col-sm-5">
-      <img class="card-img-top img-fluid img-thumbnail" src="../assets/${img_user_localStorage}" alt="Foto Usuario">
+      `<div class="card text-white bg-dark mb-3 col-xl-5">
+      <img class="mt-2 card-img-top img-fluid img-thumbnail" src="../assets/${img_user_localStorage}" alt="Foto Usuario">
       <div class="card-body">
         <h5 class="card-title">${usuarioConImagen}: ${user_localStorage.name_usuario} </h5>
-        <p class="card-text">${user_localStorage.email_usuario}</p>
+        <p class="card-text">Email: ${user_localStorage.email_usuario}</p>
       </div>
     </div>`
         // "<ul class=' list-group-item list-group-item-action'>" +
@@ -52,10 +52,10 @@ function uniendoImagenes(arrImg, arrKeys) {
     let obj_localStorage = JSON.parse(localStorage.getItem(clave));
 
     lista.innerHTML +=
-    `<div class="card  text-white bg-dark">
+    `<div class=" card text-white bg-dark mb-3 col-xl-5">
     <div class="card-body">
       <h5 class="card-title">${clave}: ${obj_localStorage.name_usuario} </h5>
-      <p class="card-text">${obj_localStorage.email_usuario}</p>
+      <p class="card-text">Email: ${obj_localStorage.email_usuario}</p>
     </div>
   </div>`
       // "<ul class=' list-group-item list-group-item-action'>" +
