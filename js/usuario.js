@@ -31,7 +31,7 @@ function uniendoImagenes(arrImg, arrKeys) {
       let user_localStorage = JSON.parse(localStorage.getItem(usuarioConImagen));
       let img_user_localStorage = JSON.parse(localStorage.getItem(arrImg[i]));
       lista.innerHTML +=
-      `<div class="card col-sm">
+      `<div class="card card text-white bg-dark mb-3 col-sm-5">
       <img class="card-img-top img-fluid img-thumbnail" src="../assets/${img_user_localStorage}" alt="Foto Usuario">
       <div class="card-body">
         <h5 class="card-title">${usuarioConImagen}: ${user_localStorage.name_usuario} </h5>
@@ -52,7 +52,7 @@ function uniendoImagenes(arrImg, arrKeys) {
     let obj_localStorage = JSON.parse(localStorage.getItem(clave));
 
     lista.innerHTML +=
-    `<div class="card col-sm"">
+    `<div class="card  text-white bg-dark">
     <div class="card-body">
       <h5 class="card-title">${clave}: ${obj_localStorage.name_usuario} </h5>
       <p class="card-text">${obj_localStorage.email_usuario}</p>
