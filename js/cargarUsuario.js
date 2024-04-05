@@ -38,13 +38,29 @@ function alertaContrasenasNoValida(e) {
 function validarCorreo(correo) {
   var patron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return patron.test(correo);
+
 }
 function validarContrasena(contrasena) {
   // La contraseña debe tener al menos 8 caracteres de longitud
   // Debe contener al menos una letra minúscula, una letra mayúscula, un número y un carácter especial
   var patron =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   return patron.test(contrasena);
+}
+
+function guardadoExitoso() {
+  console.log("Hola123");
+  alertDiv.innerHTML =
+  '<div class="alert alert-success" role="alert"> Usuario creado con exito. <br>Redirigiendo <div class="spinner-border text-success" role="status"> <span class="visually-hidden">Redirigiendo...</span></div>';
+  }
+
+function redirigirHaciaUsuarios() {
+  console.log("Hola111");
+  guardadoExitoso ()
+  console.log("Hola122");
+  setTimeout(function () {
+    window.location.href = "./usuarios.html"
+  }, 3000);
 }
 
 function guardar_cliente(e) {
@@ -60,7 +76,7 @@ function guardar_cliente(e) {
     password_repeat_usuario === ""
   ) {
     alertaCompletarCampos();
-
+    
     console.log("Debes completar todos los campos");
   } else if (validarCorreo(email_usuario) != true) {
     alertaDebesPonerUnEmailValido();
@@ -69,7 +85,7 @@ function guardar_cliente(e) {
     alertaContrasenasNoCoinciden();
     console.log("Las contra no coinciden");
   } else if (validarContrasena(password_usuario) != true) {
-    alertaContrasenasNoValida()
+    alertaContrasenasNoValida();
     console.log(
       "La contraseña debe tener al menos 8 caracteres de longitud. Debe contener al menos una letra minúscula, una letra mayúscula, un número y un ca rácter especial"
     );
@@ -83,10 +99,7 @@ function guardar_cliente(e) {
     console.log("hola");
     let i = localStorage.length + 1;
     localStorage.setItem("User" + [i], JSON.stringify(user));
+    redirigirHaciaUsuarios()
   }
 }
-// Por cada validación que no se cumpla muestra un mensaje durante 3 segundos y que después desaparezca.
-// Al terminar de rellenar los datos del formulario correctamente muestra un mensaje durante 3 segundos que muestre “Usuario creado correctamente” y redirige a la vista Usuarios.
-// Muestra los mensajes utilizando los alerts de Bootstrap.
-
 form.addEventListener("submit", guardar_cliente);
