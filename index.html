@@ -478,18 +478,40 @@
       <!-- 13º slide -->
       <div class="carousel-item">
         <img src="assets/imagesIndex/imgIndex.jpg" class="d-block w-100" alt="...">
-
-        <div class="carousel-caption Top-0">
+        <div class="carousel-caption top-0">
           <h5>Otors</h5>
-
-          <div id="picachucard" class="card bg-secondary mt-3" style="width: 18rem;">
-            <img src="assets/imagesIndex/pikachu.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card de pikachu</h5>
-              <p class="card-text">Esto es un ejemplo de card de picachu </p>
-              <button id="evolucionaPikachu" class="btn btn-primary">Evoluciona</button>
-            </div>
-          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col col-4">
+                <div id="picachucard" class="card bg-secondary mt-3" style="width: 12rem;">
+                  <img src="assets/imagesIndex/pikachu.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card de pikachu</h5>
+                    <p class="card-text">Esto es un ejemplo de card de picachu </p>
+                    <button id="evolucionaPikachu" class="btn btn-primary">Evoluciona</button>
+                  </div>
+                </div>
+              </div><!--coll -->
+              
+               <div class="col col-3">
+                 <button type="button" id="clickCounter" class="btn btn-primary position-relative">
+                  Click counter
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0+
+                    <span class="visually-hidden">number of clicks</span>
+                  </span>
+                </button>
+               </div><!--coll -->
+               <div class="col col-3">
+                <button type="button" id="resetClickCounter" class="btn btn-primary position-relative">
+                  Reset
+                  <span class="">
+                    <span class="visually-hidden">Reset Cliks counter</span>
+                  </span>
+                </button>
+              </div><!--coll -->
+            </div><!--row -->
+          </div><!-- container-->
 
           <p>cards,toast,badge positioned (javascript para contar clicks) con profile para reset, </p>
         </div>
@@ -529,7 +551,6 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar modal</button>
-          <button type="button" class="btn btn-primary">boton para otra accón</button>
         </div>
       </div>
     </div>
@@ -543,14 +564,14 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="spinner-border text-warning" role="status">
+          <div class="spinner-border text-warning" id="spinnerInModal" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
           Soy un Modal con un spinner
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar modal</button>
-          <button type="button" class="btn btn-primary">boton para otra accón</button>
+          <button type="button" class="btn btn-primary" id="newSpinner">New Spinner</button>
         </div>
       </div>
     </div>
