@@ -6,6 +6,8 @@ let spinnerBtn =document.getElementById("newSpinner");
 let spinnerDiv =document.getElementById("spinnerInModal");
 let clickCounter =document.getElementById("clickCounter");
 let resetClickCounter =document.getElementById("resetClickCounter");
+let cardTextPokemo =document.getElementById("cardTextPokemo");
+let cardTitlePokemon =document.getElementById("cardTitlePokemon");
 let clickCounterNumber = 0; 
 
 const spinnerTypeArray =['primary','secondary','success','danger','warning','info','light','dark'];
@@ -19,11 +21,15 @@ function changeImg(event){
     if(pikachubtn.innerHTML == "Evoluciona"){
         pikachuCardImg.setAttribute("src","assets/imagesIndex/raichu.png")
         pikachubtn.innerHTML="Pikachu"
+        cardTextPokemo.innerHTML="Raichu"
+        cardTitlePokemon.innerHTML="Raichu"
     }else{
         pikachuCardImg.setAttribute("src","assets/imagesIndex/pikachu.png")
         pikachubtn.innerHTML="Evoluciona"
+        cardTextPokemo.innerHTML="Pikachu"
+        cardTitlePokemon.innerHTML="Pikachu"
     }
-    console.log('pikachuCardImg2 : ', pikachuCardImg)    
+    //console.log('pikachuCardImg2 : ', pikachuCardImg)    
 }
 function changeSpinner(event){
     const newSpinner = "spinner-border text-"+spinnerTypeArray[Math.floor(Math.random() * spinnerTypeArray.length)]
