@@ -68,7 +68,7 @@ function toastfunction(e) {
   toastView.classList.add("show");
   setTimeout(function () {
     toastView.classList.remove("show");
-  }, 10000);
+  }, 7000);
 }
 
 pikachubtn.addEventListener("click", changeImg);

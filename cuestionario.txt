@@ -1,0 +1,63 @@
+¿Qué es Bootstrap?¿Para qué sirve?
+Bootstrap es un framework de desarrollo front-end de código abierto creado por Twitter. Está diseñado para facilitar y agilizar el proceso de desarrollo web al proporcionar una colección de herramientas y componentes predefinidos, como clases CSS y JavaScript, que pueden ser utilizados para construir interfaces de usuario responsivas y atractivas.
+ Esto lo convierte en una opción popular entre los desarrolladores para crear sitios web y aplicaciones web modernas. 
+¿Por qué usar Bootstrap?
+Porque permite hacer aplicaciones responsive, que se adapten a cualquier tipo de pantalla de forma sencilla. Es decir, nos permite definir como queremos que se vea nuestro sitio sin que afecte desde que dispositivo se acceda a la página.
+Características de Bootstrap.
+Contiene muchos componentes que permiten diseñar la página sin utilizar css directamente. La característica que hizo a BootStrap “famoso” es su sistema de grilla y breakpoints, esta divide el espacio en 12 columnas, y a cada elemento se le asigna cuántas columnas ocupara dependiendo en que tamaño de pantalla aparezca (con los breakpoints), dando así un sistema responsive a la página sin mayores problemas
+También, como se mencionó, permite agregar diseño css sin tener que escribir el archivo de dicho css, se le da estilo a las etiquetas con clases de BootStrap.
+
+Ventajas y desventajas de usar Bootstrap.
+Ventajas:
+
+1.	Facilidad de uso: Bootstrap simplifica el desarrollo web con su conjunto de componentes y estilos predefinidos.
+2.	Respuesta rápida: Permite crear sitios web responsive que se adaptan automáticamente a diferentes dispositivos y tamaños de pantalla.
+3.	Consistencia: Ofrece un conjunto coherente de estilos y componentes, lo que garantiza una apariencia uniforme en todo el sitio.
+4.	Documentación completa: Bootstrap tiene una documentación detallada y una gran comunidad de usuarios que facilita el aprendizaje y la resolución de problemas.
+5.	Personalización: Se puede personalizar fácilmente utilizando Sass o CSS personalizado para adaptarse a las necesidades específicas del proyecto.
+6.	Compatibilidad: Es compatible con la mayoría de los navegadores modernos, lo que garantiza una buena experiencia de usuario en diferentes entornos.
+
+Desventajas:
+
+1.	Diseño genérico: El uso extensivo de Bootstrap puede resultar en sitios web con un aspecto genérico si no se personalizan adecuadamente.
+2.	Código adicional: Algunos proyectos pueden terminar con un código HTML más pesado debido a la inclusión de clases de Bootstrap, lo que puede afectar al rendimiento.
+3.	Aprendizaje necesario: Aunque Bootstrap simplifica el desarrollo, aún requiere tiempo para familiarizarse con su estructura y clases.
+4.	Dependencia: Al basar un proyecto en Bootstrap, existe cierta dependencia de las actualizaciones y cambios en el marco de trabajo.
+5.	Limitaciones de diseño: Puede resultar difícil lograr un diseño altamente personalizado o fuera de lo común dentro del marco de trabajo de Bootstrap sin una modificación significativa.
+Cómo instalar o implementar Bootstrap en mi proyecto.
+Hay 2 maneras:
+•	Linkear a la librería de bootStrap en el archivo HTML. (Desventaja que no podemos modificar las librerías para poder personalizar aquellos componentes que deseemos)
+•	Descargarse la librería y agregarla, para ello hay varias formas.
+¿Se puede implementar responsive con Bootstrap? Si es así, ¿podrías explicar cómo funciona y poner un ejemplo?
+Si, es el punto fuerte de BootStrap. divide el ancho de la pagina en 12 columnas y adapta el contenido a los diferentes tamños de pantallas mediante los “breakpoints”. Le asignamos a las etiquetas cuantas columnas ocuparan acorde al tamaño de pantalla.No importa el tamaño de la pantalla en la cual se abra la pagina, mediante los breakpoints se adaptara de manera responsive a dichos tamaños
+¿Que es un componente de Bootstrap? Pon un ejemplo.
+Un componente de Bootstrap es un elemento de interfaz de usuario predefinido, como botones, formularios o carruseles, diseñado para facilitar la creación rápida de sitios web con estilos y comportamientos consistentes.
+¿Hay muchos tipos de diseños en Bootstrap? Si los hay, explícalos.
+
+Sí, Bootstrap ofrece varios tipos de diseños, incluyendo diseños de cuadrícula, flexbox, y componentes predefinidos como navbar, tarjetas, carruseles, entre otros, para construir interfaces web responsive.
+
+¿Cuáles son los diferentes tipos de botones en Bootstrap? Pon ejemplos.
+Bootstrap tiene muchos botones que deben ser aplicados acorde a lo que se busca notificar o hacer, por ejemplo:
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-secondary">Secondary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-light">Light</button>
+	<button type="button" class="btn btn-dark">Dark</button>
+¿Qué es un Carousel de Bootstrap? Pon un ejemplo.
+Es similar a una presentación de PowerPoint, mediante el desplazamiento entre diapositivas se visualizan imágenes y texto (también se puede añadir funciones dentro de las diapositivas para hacer interactivo el carousel)
+¿Qué es un spinner de Bootstrap? Pon un ejemplo.
+Es un indicador de que esta cargando la pagina.
+<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+¿Qué es un navBar de Bootstrap? Pon un ejemplo.
+Es una barra de navegación con un sistema responsive que facilita la navegación en el sitio web y acorde al tamaño de pantalla se muestra de una u otra manera (el proyecto tiene un navbar).
+¿Qué es un modal de Bootstrap? Pon un ejemplo.
+Un modal de Bootstrap es una ventana emergente que se superpone al contenido principal de una página para mostrar información adicional o solicitar la interacción del usuario (el proyecto cuenta con ejemplos de modal).
+¿Existen inputs para subir archivos en Bootstrap? Pon un ejemplo.
+Si, facilitan la interfaz para el cargado de archivos (el proyecto cuenta con ejemplos).
+¿Qué es un plugin scrollspy en Bootstrap? Pon un ejemplo.
+El plugin Scrollspy de Bootstrap es una funcionalidad que activa la navegación resaltando automáticamente los elementos de la barra de navegación que corresponden a la sección visible en la página mientras se desplaza hacia abajo (el proyecto cuenta con un ejemplo).

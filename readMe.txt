@@ -1,0 +1,1 @@
+Este repositorio cuenta con una presentacion donde se explica que es Bootstrap me diante la implementacion de un Carousel en index.html.
