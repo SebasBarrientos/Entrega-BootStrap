@@ -23,7 +23,7 @@ function filtrar_usuario(e) {
   console.log(usuarioBuscado);
   let filtro = keys.includes(usuarioBuscado);
   if (filtro != true) {
-    console.log("No existe ese usuario");
+    alert("No existe ese usuario");
   } else {
     cargar_imagen(usuario,usuarioBuscado);
   }

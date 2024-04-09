@@ -51,7 +51,7 @@ function validarContrasena(contrasena) {
 function guardadoExitoso() {
   console.log("Hola123");
   alertDiv.innerHTML =
-  '<div class="alert alert-success" role="alert"> Usuario creado con exito. <br>Redirigiendo <div class="spinner-border text-success" role="status"> <span class="visually-hidden">Redirigiendo...</span></div>';
+  '<div class="alert alert-success" role="alert"> Usuario creado con exito. <br> <div class="spinner-border text-success" role="status"> <span class="visually-hidden">Redirigiendo...</span></div>';
   }
 
 function redirigirHaciaUsuarios() {
